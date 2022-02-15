@@ -20,9 +20,13 @@
 DSP o Digital Signal Processing consiste nell'elaborazione di un segnale utilizzando tecniche software.
 
 \section{I segnali di partenza}
-La prima simulazione è realizzata in Python con il software Jupyter Lab che permette di eseguire piccole parti di codice e visualizzarne immediatamente i risultati tramite grafici e tabelle. Il codice scritto in Python sarà poi importato all'interno di LabVIEW.
+La prima simulazione è realizzata in Python con il software Jupyter Lab che permette di eseguire 
+parti di codice e visualizzarne immediatamente i risultati tramite grafici e tabelle. Il codice 
+scritto in Python sarà poi importato all'interno di LabVIEW.
 \\
-Prima di demodulare un segnale FM è necessario avere un segnale FM, il quale si crea a partire da un segnale modulante ed uno portante. In questo esempio i due segnali sono entrambi sinusoidali, quello modulante ha una frequenza $f_m = 5 kHz$ mentre quello portante ha una frequenza di $f_m = 50 kHz$.ù
+Prima di demodulare un segnale FM è necessario avere un segnale FM, il quale si crea a partire da un segnale 
+modulante ed uno portante. In questo esempio i due segnali sono entrambi sinusoidali, quello modulante ha una 
+frequenza $f_m = 5 kHz$ mentre quello portante ha una frequenza di $f_m = 50 kHz$.
 \\
 Avvalendosi degli strumenti di visualizzazione di Jupyter Lab, è possibile visualizzare il grafico dei due segnali:
 \\
@@ -42,7 +46,15 @@ Che uniti vengono modulati nel seguente segnale.
 \end{center}
 
 \section{Demodulazione}
-\subsection{Filtro passa basso9}
-Per poter tornare al segnale modulante di partenza, il primo passo è quello di 
+\subsection{Filtro passa basso}
+Per poter tornare al segnale modulante di partenza, il primo passo è quello di applicare un filtro passa-basso.
+Nel caso concreto, la frequenza di taglio del filtro è pari al 70\% della frequenza della portante, che in 
+questo caso è pari a $35 kHz$.
+\\
+Implementando il filtro in software, il segnale che si ottiene è il seguente
+
+\begin{center}
+    \includegraphics[width=\textwidth]{filtrato.png}
+\end{center}
 
 \end{document}

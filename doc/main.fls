@@ -237,6 +237,11 @@ INPUT ./images//modulato.png
 INPUT ./images//modulato.png
 INPUT ./images//modulato.png
 INPUT ./images//modulato.png
+INPUT ./images//filtrato.png
+INPUT ./images//filtrato.png
+INPUT ./images//filtrato.png
+INPUT ./images//filtrato.png
+INPUT ./images//filtrato.png
 INPUT main.aux
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
