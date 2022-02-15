@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1644963675 "/home/giovanni/fm-demodulator-dsp/doc/main.tex" "main.pdf" "main" 1644963677
-  "/home/giovanni/fm-demodulator-dsp/doc/main.tex" 1644963675 5105 e483908b34f2d21413a312664e22a86a ""
+["pdflatex"] 1644964179 "/home/giovanni/fm-demodulator-dsp/doc/main.tex" "main.pdf" "main" 1644964180
+  "/home/giovanni/fm-demodulator-dsp/doc/main.tex" 1644964178 5159 fdd66ad470c1d60afe32f755a1324117 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1640600964 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1640600964 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1640600964 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -45,14 +45,14 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1640600964 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1640890270 334215 ad2feb41952e3720830b65f83a01c5b0 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1640890261 2920111 e8d9739b09d0107fad1d41ad8f79a19e ""
-  "images//filtrato.png" 1644961716 87444 0e5ae695f2343c3f4bfdda630ee8ea38 ""
-  "images//inviluppo.png" 1644961716 57037 7dd8d4739724b569cfb9be812e25c132 ""
-  "images//modulante.png" 1644961716 50031 ec72723be1f4f68c0387c4abeaeeeb5b ""
-  "images//modulato.png" 1644961716 146678 2f14ff72797e932a5c1948c3c80e12d8 ""
-  "images//portante.png" 1644961716 127982 0ea05a434274d725fe79b759701769b7 ""
-  "images//positivo.png" 1644961716 103244 1960ad2f91139e26a99785cd7c7d1a85 ""
-  "main.aux" 1644963677 1322 d6819823c06a7b799b920a9d6deb931b "pdflatex"
-  "main.tex" 1644963675 5105 e483908b34f2d21413a312664e22a86a ""
+  "images//filtrato.png" 1644963792 87444 0e5ae695f2343c3f4bfdda630ee8ea38 ""
+  "images//inviluppo.png" 1644963793 57037 7dd8d4739724b569cfb9be812e25c132 ""
+  "images//modulante.png" 1644963790 50031 ec72723be1f4f68c0387c4abeaeeeb5b ""
+  "images//modulato.png" 1644963791 146678 2f14ff72797e932a5c1948c3c80e12d8 ""
+  "images//portante.png" 1644963790 127982 0ea05a434274d725fe79b759701769b7 ""
+  "images//positivo.png" 1644963792 103244 1960ad2f91139e26a99785cd7c7d1a85 ""
+  "main.aux" 1644964180 1322 d6819823c06a7b799b920a9d6deb931b "pdflatex"
+  "main.tex" 1644964178 5159 fdd66ad470c1d60afe32f755a1324117 ""
   (generated)
   "main.aux"
   "main.log"
