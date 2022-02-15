@@ -15,9 +15,14 @@
 \section{Introduction}
 
 \subsection{Segnale FM}
+La modulazione FM è una modulazione che consente di codificare un segnale detto modulante all'interno di un altro segnale di frequenza
+più alta detto portante. L'informazione del segnale modulante è contenuto nella variazione di frequenza. Il segnale modulato
+ha quindi un'ampiezza costante ma una frequenza che varia. La modulazione FM è usata spesso quando si vuole trasmettere un segnale
+a bassa frequenza attraverso onde radio.
 
 \subsection{Tecnica DSP}
-DSP o Digital Signal Processing consiste nell'elaborazione di un segnale utilizzando tecniche software.
+DSP o Digital Signal Processing consiste nell'elaborazione di un segnale utilizzando tecniche software, spesso emulando un circuito.
+La comodità di questa tecnica è che un computer può emulare qualsiasi circuito ed è quindi molto più flessibile.
 
 \section{I segnali di partenza}
 La prima simulazione è realizzata in Python con il software Jupyter Lab che permette di eseguire 
@@ -33,10 +38,12 @@ Avvalendosi degli strumenti di visualizzazione di Jupyter Lab, è possibile visu
 \begin{center}
     \includegraphics[width=\textwidth]{modulante.png}
 \end{center}
+Il segnale modulante, $f = 1 kHz$
 
 \begin{center}
     \includegraphics[width=\textwidth]{portante.png}
 \end{center}
+Il segnale portante, $f = 10 kHz$
 
 \newpage
 Che uniti vengono modulati nel seguente segnale.
@@ -45,13 +52,13 @@ Che uniti vengono modulati nel seguente segnale.
     \includegraphics[width=\textwidth]{modulato.png}
 \end{center}
 
-\section{Demodulazione}
-\subsection{Filtro passa basso}
-Per poter tornare al segnale modulante di partenza, il primo passo è quello di applicare un filtro passa-basso.
-Nel caso concreto, la frequenza di taglio del filtro è pari al 70\% della frequenza della portante, che in 
-questo caso è pari a $7 kHz$.
-\\
-Per implementare un filtro passa basso nel software è sufficiente un ciclo for con il seguente codice:
+
+\section{Implementazione in DSP}
+\subsection{Passa basso}
+Per demodulare un segnale FM è necessario applicare un filtro passa-basso. In hardware si potrebbe implementare
+con un circuito R-C, mentre in software è sufficiente scrivere un algoritmo che discretizza il circuito.\\
+L'implementazione più semplice richiede un ciclo for e si può scrivere in Python con la seguente funzione:
+
 \begin{verbatim}
 def low_pass_filter(signal: List[float], tau: float) -> List[float]:
     output = np.zeros_like(signal)
@@ -63,8 +70,57 @@ def low_pass_filter(signal: List[float], tau: float) -> List[float]:
     return output
 \end{verbatim}
 
+La funzione prende in input un segnale e una tau, e ritorna il segnale filtrato.
+
+\subsection{Diodo}
+
+\section{Demodulazione in Python}
+
+\subsection{Filtro passa basso}
+Per poter tornare al segnale modulante di partenza, il primo passo è quello di applicare un filtro passa-basso.
+Nel caso concreto, la frequenza di taglio del filtro è pari al 70\% della frequenza della portante, che in 
+questo caso è pari a $7 kHz$.
+\\
+Applicando la funzione creata in precedenza, si ottiene in output un segnale pseudo-AM.
+
 \begin{center}
     \includegraphics[width=\textwidth]{filtrato.png}
 \end{center}
+
+\subsection{Semionda positiva}
+Il secondo passaggio consiste nell'ottenere solamente la semionda positiva del segnale AM. Per far ciò è sufficiente
+applicare a tutto il segnale la funzione matematica di modulo, che in python si chiama abs (da absolute).
+
+\begin{center}
+    \includegraphics[width=\textwidth]{positivo.png}
+\end{center}
+
+\subsection{Rilevatore di inviluppo}
+Per ottenere indietro il segnale modulante, si applica un cosiddetto rilevatore di inviluppo, che non è altro che un filtro
+passa basso che segue i "picchi" del segnale, togliendo tutta la cosiddetta seghettatura.
+\\
+La frequenza di taglio del filtro passa basso in questo caso è pari a tre volte la frequenza modulante, ovvero $3 kHz$.
+Avendo già la funzione pronta per il passa basso, è sufficiente chiamarla passando come parametri il segnale della semionda
+positiva e la tau relativa a $3 kHz$.
+\\
+Sottraendo poi un segnale DC per centrare lo zero del segnale ed avere una parte positiva ed una negativa, si ottiene finalmente
+un'onda che assomiglia molto alla sinusoide di partenza.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{inviluppo.png}
+\end{center}
+Il segnale demodulato.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{modulante.png}
+\end{center}
+Il segnale modulante di partenza.
+
+Come si può facilmente notare confrontando i due segnali, il primo è sfasato di 180 gradi rispetto al secondo.
+Si tratta probabilmente del risultato dei due filtri passa-basso di primo ordine, che oltre ad attenuare il segnale
+applicano anche uno sfasamento.
+
+\section{Implementazione in LabVIEW}
+LabVIEW permette di eseguire codice Python, per cui è possibile utilizzare tutto il codice 
 
 \end{document}

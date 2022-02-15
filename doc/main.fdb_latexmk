@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1644961610 "/home/giovanni/fm-demodulator-dsp/doc/main.tex" "main.pdf" "main" 1644961610
-  "/home/giovanni/fm-demodulator-dsp/doc/main.tex" 1644961608 2281 6942c6afcefe062f80f4e617d446a6f0 ""
+["pdflatex"] 1644963675 "/home/giovanni/fm-demodulator-dsp/doc/main.tex" "main.pdf" "main" 1644963677
+  "/home/giovanni/fm-demodulator-dsp/doc/main.tex" 1644963675 5105 e483908b34f2d21413a312664e22a86a ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1640600964 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1640600964 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1640600964 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -43,14 +43,16 @@
   "/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def" 1640600964 29971 0fb19a39718d289d512ef2f074f16cc2 ""
   "/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg" 1640600964 678 4792914a8f45be57bb98413425e4c7af ""
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1640600964 39911 2da6c67557ec033436fe5418a70a8a61 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1640775634 334215 ad2feb41952e3720830b65f83a01c5b0 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1640775631 2920102 77ce73e3d57a2265b57e587f2226789c ""
-  "images//filtrato.png" 1644960522 87444 0e5ae695f2343c3f4bfdda630ee8ea38 ""
-  "images//modulante.png" 1644960520 50031 ec72723be1f4f68c0387c4abeaeeeb5b ""
-  "images//modulato.png" 1644960521 146678 2f14ff72797e932a5c1948c3c80e12d8 ""
-  "images//portante.png" 1644960520 127982 0ea05a434274d725fe79b759701769b7 ""
-  "main.aux" 1644961610 660 83215b843ae7a43c3a624b0e69766550 "pdflatex"
-  "main.tex" 1644961608 2281 6942c6afcefe062f80f4e617d446a6f0 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1640890270 334215 ad2feb41952e3720830b65f83a01c5b0 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1640890261 2920111 e8d9739b09d0107fad1d41ad8f79a19e ""
+  "images//filtrato.png" 1644961716 87444 0e5ae695f2343c3f4bfdda630ee8ea38 ""
+  "images//inviluppo.png" 1644961716 57037 7dd8d4739724b569cfb9be812e25c132 ""
+  "images//modulante.png" 1644961716 50031 ec72723be1f4f68c0387c4abeaeeeb5b ""
+  "images//modulato.png" 1644961716 146678 2f14ff72797e932a5c1948c3c80e12d8 ""
+  "images//portante.png" 1644961716 127982 0ea05a434274d725fe79b759701769b7 ""
+  "images//positivo.png" 1644961716 103244 1960ad2f91139e26a99785cd7c7d1a85 ""
+  "main.aux" 1644963677 1322 d6819823c06a7b799b920a9d6deb931b "pdflatex"
+  "main.tex" 1644963675 5105 e483908b34f2d21413a312664e22a86a ""
   (generated)
   "main.aux"
   "main.log"
