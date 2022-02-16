@@ -238,6 +238,16 @@ INPUT ./images//modulato.png
 INPUT ./images//modulato.png
 INPUT ./images//modulato.png
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT ./images//filtrato-test.png
+INPUT ./images//filtrato-test.png
+INPUT ./images//filtrato-test.png
+INPUT ./images//filtrato-test.png
+INPUT ./images//filtrato-test.png
+INPUT ./images//diode.png
+INPUT ./images//diode.png
+INPUT ./images//diode.png
+INPUT ./images//diode.png
+INPUT ./images//diode.png
 INPUT ./images//filtrato.png
 INPUT ./images//filtrato.png
 INPUT ./images//filtrato.png

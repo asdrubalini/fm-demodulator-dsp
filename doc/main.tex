@@ -46,7 +46,7 @@ Il segnale modulante, $f = 1 kHz$
 Il segnale portante, $f = 10 kHz$
 
 \newpage
-Che uniti vengono modulati nel seguente segnale.
+Che uniti vengono modulati nel seguente segnale FM.
 
 \begin{center}
     \includegraphics[width=\textwidth]{modulato.png}
@@ -54,7 +54,7 @@ Che uniti vengono modulati nel seguente segnale.
 
 
 \section{Implementazione in DSP}
-\subsection{Passa basso}
+\subsection{Filtro passa basso}
 Per demodulare un segnale FM è necessario applicare un filtro passa-basso. In hardware si potrebbe implementare
 con un circuito R-C, mentre in software è sufficiente scrivere un algoritmo che discretizza il circuito.\\
 L'implementazione più semplice richiede un ciclo for e si può scrivere in Python con la seguente funzione:
@@ -72,7 +72,31 @@ def low_pass_filter(signal: List[float], tau: float) -> List[float]:
 
 La funzione prende in input un segnale e una tau, e ritorna il segnale filtrato.
 
+Per testare il corretto funzionamento del filtro passa basso, genero un segnale sinosoidale
+con frequenza crescente, da $0 Hz$ a $1900 Hz$ e applico il filtro passa basso.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{filtrato-test.png}
+\end{center}
+
+Come evidente dal grafico a destra, il segnale viene filtrato correttamente e le frequenze superiori
+alla frequenza di taglio vengono attenuate, come ogni filtro passa basso di primo ordine.
+
 \subsection{Diodo}
+Per simulare un diodo è sufficiente applicare la funzione di valore assoluto al segnale. In Python
+è sufficiente applicare al segnale la funzione abs.
+
+\begin{verbatim}
+def diode(signal: List[float]) -> List[float]:
+    return [abs(s) for s in signal]
+\end{verbatim}
+
+Anche in questo caso, per verificarne il corretto funzionamento è sufficiente inserire un segnale
+sinusoidale e verificarne l'output.
+
+\begin{center}
+    \includegraphics[width=\textwidth]{diode.png}
+\end{center}
 
 \section{Demodulazione in Python}
 
@@ -89,7 +113,7 @@ Applicando la funzione creata in precedenza, si ottiene in output un segnale pse
 
 \subsection{Semionda positiva}
 Il secondo passaggio consiste nell'ottenere solamente la semionda positiva del segnale AM. Per far ciò è sufficiente
-applicare a tutto il segnale la funzione matematica di modulo, che in python si chiama abs (da absolute).
+applicare la funzione diode definita precedentemente.
 
 \begin{center}
     \includegraphics[width=\textwidth]{positivo.png}
