@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1645014434 "/home/giovanni/fm-demodulator-dsp/doc/main.tex" "main.pdf" "main" 1645014436
-  "/home/giovanni/fm-demodulator-dsp/doc/main.tex" 1645014433 6066 28629519a2fcec5f0cec59ed172c14df ""
+["pdflatex"] 1645046094 "/home/giovanni/fm-demodulator-dsp/doc/main.tex" "main.pdf" "main" 1645046095
+  "/home/giovanni/fm-demodulator-dsp/doc/main.tex" 1645046093 6386 2fdd4f2ee72393a20d593746bd031178 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1640600964 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1640600964 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1640600964 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -49,12 +49,13 @@
   "images//filtrato-test.png" 1645014334 157341 40f3f40fe6796c0777e0d2833bd1cd08 ""
   "images//filtrato.png" 1645014338 87744 2141f846d029ec45ed68523281e963b2 ""
   "images//inviluppo.png" 1645014340 57284 68cbeaa295445cf113f8e129384dc9d6 ""
+  "images//labview.png" 1645042086 198711 49071fb145bed60d928ec4da0f1099fe ""
   "images//modulante.png" 1645014334 50323 f861e1cfdca028121028245f1c19170f ""
   "images//modulato.png" 1645014337 147034 3800a44e566dadf0e2e0877139c7175e ""
   "images//portante.png" 1645014336 128317 64611596247e55807c4b33ec5a22ff54 ""
   "images//positivo.png" 1645014339 103422 cb9290864a046e113e3db5290a03bd2f ""
-  "main.aux" 1645014436 1329 c2b66c94005592442057fce9d47ca69c "pdflatex"
-  "main.tex" 1645014433 6066 28629519a2fcec5f0cec59ed172c14df ""
+  "main.aux" 1645046095 1329 c2b66c94005592442057fce9d47ca69c "pdflatex"
+  "main.tex" 1645046093 6386 2fdd4f2ee72393a20d593746bd031178 ""
   (generated)
   "main.aux"
   "main.log"
